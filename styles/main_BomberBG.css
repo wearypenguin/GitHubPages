@@ -1,0 +1,318 @@
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+	min-height: 100%;
+	max-width: 100%;
+}
+.bg {
+	background-image: url("../images/core-img/inverted stars.png");
+	background-position: top;
+	background-attachment: scroll;
+    background-repeat: repeat;
+	margin: 0;
+    padding: 0;
+	min-height: 420px;
+}
+main {
+	padding: 10px;
+}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+	color: #33B1FF;
+}
+/*a:link {
+	color: #33B1FF;
+}
+a:visited {
+	color: #11B1FF;
+}*/
+a:hover { 
+    color: #87cefa;
+}
+/*a:focus { 
+    color: #87cefa;
+}
+a:active { 
+    color: #87cefa;
+}*/
+.icons {
+    float:left;
+    padding-right:.5em;
+    padding-bottom:.5em;
+}
+#nofloat {
+    clear:left;
+}
+/* the styles for the header */
+header {
+    padding: .93em 1.87em 0em 1.87em;    /* 15 / 16 and 30 / 16 */
+	background-image: url("../images/core-img/inverted stars.png");
+	min-height: 180px;
+} 
+header img { 
+    max-width: 140px;
+    min-width: 70px;
+} 
+header h1 {
+	font-size: 300%;
+	font-style: italic;
+	color: white;
+	text-indent: 1px;
+	text-shadow: 1px 1px 1px lightskyblue;
+    padding-bottom: .3em;
+	margin-top: 1em;
+    text-align: center;
+}
+header h2 {
+	font-size: 250%;
+	font-style: italic;
+	color: white;
+	text-indent: 1px;
+	text-shadow: 1px 1px 1px lightskyblue;
+    margin-bottom: .3em;
+    text-align: center;
+}
+header h3 {
+	font-size: 150%;
+    text-indent: 1px;
+    color: black;
+    padding-bottom: 0;
+    text-align: center;
+}
+header h4 {
+	font-size: 100%;
+    text-indent: 1px;
+    color: black;
+    padding-bottom: 0;
+    text-align: center;
+}
+header picture:nth-of-type(1) { 
+	float: left;
+    max-width: 140px;
+    min-width: 70px;
+} 
+header picture:nth-of-type(2) { 
+	float: right;
+    max-width: 140px;
+    min-width: 70px;
+} 
+/* the styles for the navigation menu */
+#nav_menu {
+	/*clear: left;*/
+	background-color: #303030;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0px;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 18%;                 /* 180 / 900 x 100 */
+	background-color: rgba(10,10,10,0.81);;
+}
+#nav_menu img { 
+	float: left;
+    width: 3.8%;
+}
+#nav_menu img:hover{ 
+
+}
+#nav_menu ul a:hover{
+
+}
+#nav_menu img:hover img{ 
+
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+    font-weight: bold;
+	color: #BCC6CC;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+	border-top: solid;
+	border-width: 2px;
+	border-color: #BCC6CC;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li a.current {
+	color: lightskyblue;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: #2C3540;
+}
+/* the styles for the section */
+section {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+    padding: 1em 1.2em;      /*25 / 16 and 30 / 16 */
+	background:rgba(10,10,10,0.81);
+	color: #FFFFFF;
+}
+section h1 {
+    font-size: 160%;
+    margin-bottom: 0.3em;
+}
+section h2 {
+    font-size: 160%;
+    margin-bottom: 0.5em;
+	color: mediumpurple;
+}
+section h3 {
+    color: #E0E0E0; /*#BCC6CC; #98F9FF;*/
+    font-size: 110%;
+	margin-bottom: .5em;
+}
+section p {
+    font-size: 100%;
+	color: #BCC6CC;
+	line-height: 1.2em;
+}
+section li a {
+    line-height: 1.5em;
+}
+/* the styles for the footer */
+footer { 
+	clear: both;
+	/*padding: .93em 1.87em;     15 / 16 and 30 / 16 */
+	/*margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 5%;
+	margin-bottom: 5%;*/
+	background:rgba(0,0,0,0.81);
+	padding: 5px;
+} 
+footer p {
+	text-align: center;
+    font-size: 85%;
+    color: #BCC6CC;    
+}
+/*footer a {
+    color: lightskyblue;    
+}
+footer a:link, a:visited {
+    color: lightskyblue;    
+}
+footer a:hover {
+    color: white;
+}*/
+/* mobile */
+#mobile_menu {
+	display: none;
+}
+/* tablet portrait */
+@media only screen and (/*max-width: 900px*/) {
+    body { font-size: 90%;
+    box-shadow: 0;}
+    header { text-shadow: 0;}
+	section {
+		margin-left: 10%;
+		/*margin-right: 30%;*/
+		width: 60%;
+	} 
+}
+/* mobile landscape */
+@media only screen and (/*max-width: 767px*/) {
+    #nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: #303030;
+    }
+    #mobile_menu a {
+        background-color: #303030;
+		margin-left: 20px;
+    }
+    #mobile_menu ul li a:hover, #mobile_menu ul li a:focus {
+	background-color: #303030;
+    }
+	#mobile_menu img { 
+	float: left;
+    width: 15%;
+}
+    header h2 {
+        font-size: 200%;
+    }
+    section {
+        float: none;
+        /*width: 95%;*/
+        padding: 2.5%;
+		margin-left: 5%;
+		/*margin-right: 40%;*/
+		width: 50%;
+    }
+    aside {
+        float: left;
+        width: 95%;
+        padding: 2.5%;
+    }
+	.slicknav_menu {
+		background-color: #303030; !important;
+        padding: .18em;
+	}
+}
+@media only screen and (/*max-width: 600px*/)
+{
+	section {
+        padding: 2%;
+		margin-left: 3%;
+		width: 40%;
+    }
+}
+@media only screen and (/*max-width: 479px*/)
+{
+	section {
+        padding: 1%;
+		margin-left: 2%;
+		width: 30%;
+    }
+}
+/* mobile portrait */
+@media only screen and (/*max-width: 479px*/)
+{
+    #mobile_menu {
+		display: block;
+	}
+    header {
+        font-size: 75%;
+    }
+    header img {
+        width: 4%;
+        padding: .1em;
+    }
+	/*header picture {
+        width: 50%;
+        padding: .1em;
+    }*/
+    section p {
+        font-size: 75%;
+    }
+}
